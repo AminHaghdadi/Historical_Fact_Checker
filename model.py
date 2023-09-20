@@ -6,7 +6,7 @@ from key import openai_API
 import os
 os.environ["OPENAI_API_KEY"] =openai_API 
 
-llm = ChatOpenAI(model="gpt-3.5-turbo",temperature=0.1)
+llm = ChatOpenAI(model="gpt-3.5-turbo",temperature=0)
 
 tools=load_tools(['wikipedia'],llm=llm)
 
