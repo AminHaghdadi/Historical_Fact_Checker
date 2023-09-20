@@ -10,5 +10,6 @@ button=st.button('Submit')
 
 if button :
     response=wiki_fact(query)
+    st.caption('Based on Wikipedia, this is the response of your query:')
     st.write(response)
 
